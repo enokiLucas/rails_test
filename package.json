@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@spectrum-web-components/theme": "^0.44.0"
+  }
+}
