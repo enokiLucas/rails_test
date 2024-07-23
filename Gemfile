@@ -60,3 +60,6 @@ group :development do
   # gem "spring"
 end
 
+###
+# Devise: Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.9', '>= 4.9.4'
