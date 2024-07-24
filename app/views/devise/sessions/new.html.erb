@@ -1,15 +1,17 @@
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+
+
+  <sl-input class="field" label="Email" clearable size="medium" pill type="email">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+  </sl-input>
 
-  <div class="field">
+  <sl-input class="field" label="Password" clearable password-toggle size="medium" pill type="password">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+  </sl-input>
 
   <% if devise_mapping.rememberable? %>
     <div class="field">
