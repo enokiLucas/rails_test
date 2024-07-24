@@ -2,4 +2,9 @@
 <p>Find me in app/views/home/index.html.erb</p>
 
 <h2>Hello <%= @name %></h2>
-<sl-button size="small" data-controller="log-in" data-action="click->log-in#connect">Log In</sl-button>
+
+<sl-button size="small" data-controller="click-me" 	data-action="click->click-me#connect">Click ME!</sl-button>
+
+<sl-button size="small" >
+	<%= link_to "Log In", new_user_session_path %>
+</sl-button>
