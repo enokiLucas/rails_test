@@ -63,6 +63,3 @@ end
 ###
 # Devise: Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.9', '>= 4.9.4'
-
-# Make the output of 'rails routes' into a csv
-gem 'rails_routes_csv'
