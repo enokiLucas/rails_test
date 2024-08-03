@@ -1,5 +1,5 @@
-import { loadHTML } from '../../utils/HTMLLoader.js';
-import { loadStyles } from '../../utils/StyleLoader.js';
+import { loadHTML } from './utils/HTMLLoader.js';
+import { loadStyles } from './utils/StyleLoader.js';
 
 class PanelRight extends HTMLElement {
 	constructor() {
@@ -8,8 +8,8 @@ class PanelRight extends HTMLElement {
 	}
 
 	async connectedCallback() {
-		await loadHTML(this.shadowRoot, '../../assets/html/PanelRight.html');
-		await loadStyles(this.shadowRoot, '../../assets/styles/PanelRight.css');
+		await loadHTML(this.shadowRoot, './templates/PanelRight.html');
+		await loadStyles(this.shadowRoot, './styles/PanelRight.css');
 		this.switchTabs();
 	}
 
